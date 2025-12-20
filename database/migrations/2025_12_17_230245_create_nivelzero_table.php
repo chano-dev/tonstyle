@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('slug', 100)->unique();
             $table->text('description')->nullable();
             $table->string('icon', 255)->nullable();
+            $table->string('image_path', 255)->nullable();
             $table->boolean('is_active')->default(true);
             $table->unsignedInteger('display_order')->default(0);
             $table->string('meta_title', 255)->nullable();
@@ -35,6 +36,7 @@ return new class extends Migration
             $table->string('slug', 100)->unique();
             $table->text('description')->nullable();
             $table->string('icon', 255)->nullable();
+            $table->string('image_path', 255)->nullable();
             $table->boolean('is_active')->default(true);
             $table->unsignedInteger('display_order')->default(0);
             $table->string('meta_title', 255)->nullable();
@@ -133,7 +135,7 @@ return new class extends Migration
             
             // Season
             $table->year('year');
-            $table->enum('season', ['revellion', 'valentine', 'all_year', 'special', 'halloween', 'school', 'weeding', 'vacations', 'work'])->default('all_year');
+            $table->enum('season', ['revellion', 'valentine', 'all_year', 'special', 'halloween', 'school', 'weeding', 'vacations', 'work', 'spring_summer', 'fall_winter'])->default('all_year');
             
             // Dates
             $table->date('launch_date')->nullable();
