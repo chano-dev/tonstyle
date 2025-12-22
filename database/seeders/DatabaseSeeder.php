@@ -14,12 +14,20 @@ class DatabaseSeeder extends Seeder
     public function run(): void
     {
         $this->call([
-            SegmentSeeder::class,
-            CategorieSeeder::class,
-            SupplierSeeder::class,
-            BrandSeeder::class,
-            CollectionSeeder::class,
+        // JÁ FORAM EXECUTADOS PHP ARTISAN DB:SEED
+            //SegmentSeeder::class,
+            //CategorieSeeder::class,
+            //SupplierSeeder::class,
+            //BrandSeeder::class,
+            //CollectionSeeder::class,
             //ProfessionalSeeder::class,
+
+            // Seeders de Tabelas Essênias (subcategoria; cores; tamanhos; material; tipo de corpo);
+            SubcategorySeeder::class,
+            ColorSeeder::class,
+            SizeSeeder::class,
+            MaterialSeeder::class,
+            BodyTypeSeeder::class,
         ]);
     }
 }
