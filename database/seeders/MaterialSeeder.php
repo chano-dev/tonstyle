@@ -112,9 +112,9 @@ class MaterialSeeder extends Seeder
         ];
 
         foreach ($materials as $material) {
-            DB::table('materials')->insert([
+            DB::table('materials')->updateOrInsert(['slug' => Str::slug($material['name'])],
+            [
                 'name' => $material['name'],
-                'slug' => Str::slug($material['name']),
                 'description' => $material['description'],
                 'material_type' => $material['material_type'],
                 'is_natural' => $material['is_natural'],

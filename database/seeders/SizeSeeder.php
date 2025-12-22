@@ -91,10 +91,12 @@ class SizeSeeder extends Seeder
         ];
 
         foreach ($sizes as $size) {
-            DB::table('sizes')->insert([
-                'name' => $size['name'],
+            DB::table('sizes')->updateOrInsert([
                 'slug' => Str::slug($size['name']),
                 'size_type' => $size['size_type'],
+            ],
+            [
+                'name' => $size['name'],
                 'description' => $size['description'],
                 'is_active' => true,
                 'display_order' => $order++,

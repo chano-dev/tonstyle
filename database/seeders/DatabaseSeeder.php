@@ -28,6 +28,21 @@ class DatabaseSeeder extends Seeder
             SizeSeeder::class,
             MaterialSeeder::class,
             BodyTypeSeeder::class,
+
+            // Seeders de Tabelas de Filtros (ocasião; estilo; padrões);
+            OccasionSeeder::class,
+            StyleSeeder::class,
+            PatternSeeder::class,
+
+            // Seeders de Tabelas de Filtros (Fit; Comprimento; Gola; Mangas: Fecho; Instruções de cuidado; certificados);
+            FitSeeder::class,
+            LengthSeeder::class,
+            NecklineSeeder::class,
+            SleeveSeeder::class,
+            ClosureSeeder::class,
+            CareInstructionSeeder::class,
+            CertificationSeeder::class,
+
         ]);
     }
 }

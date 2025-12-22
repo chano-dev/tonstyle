@@ -126,9 +126,9 @@ class ColorSeeder extends Seeder
         ];
 
         foreach ($colors as $color) {
-            DB::table('colors')->insert([
+            DB::table('colors')->updateOrInsert(['slug' => Str::slug($color['name'])],
+            [
                 'name' => $color['name'],
-                'slug' => Str::slug($color['name']),
                 'hex_code' => $color['hex_code'],
                 'is_active' => true,
                 'display_order' => $color['display_order'],

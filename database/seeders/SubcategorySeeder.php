@@ -102,11 +102,13 @@ class SubcategorySeeder extends Seeder
         ];
 
         foreach ($subcategories as $subcategory) {
-            DB::table('subcategories')->insert([
+            DB::table('subcategories')->updateOrInsert([
+                'slug' => $subcategory['slug'],
                 'category_id' => 1, // Roupas
                 'segment_id' => 1,  // Mulher
+            ],
+            [
                 'name' => $subcategory['name'],
-                'slug' => $subcategory['slug'],
                 'description' => $subcategory['description'],
                 'image_path' => null,
                 'is_active' => true,

@@ -62,9 +62,9 @@ class BodyTypeSeeder extends Seeder
         ];
 
         foreach ($bodyTypes as $bodyType) {
-            DB::table('body_types')->insert([
+            DB::table('body_types')->updateOrInsert(['slug' => $bodyType['slug']],
+            [
                 'name' => $bodyType['name'],
-                'slug' => $bodyType['slug'],
                 'description' => $bodyType['description'],
                 'characteristics' => $bodyType['characteristics'],
                 'tips' => $bodyType['tips'],
