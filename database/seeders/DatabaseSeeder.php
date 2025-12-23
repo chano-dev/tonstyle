@@ -15,12 +15,12 @@ class DatabaseSeeder extends Seeder
     {
         $this->call([
         // JÁ FORAM EXECUTADOS PHP ARTISAN DB:SEED
-            //SegmentSeeder::class,
-            //CategorieSeeder::class,
-            //SupplierSeeder::class,
-            //BrandSeeder::class,
-            //CollectionSeeder::class,
-            //ProfessionalSeeder::class,
+            SegmentSeeder::class,
+            CategorieSeeder::class,
+            SupplierSeeder::class,
+            BrandSeeder::class,
+            CollectionSeeder::class,
+            ProfessionalSeeder::class,
 
             // Seeders de Tabelas Essênias (subcategoria; cores; tamanhos; material; tipo de corpo);
             SubcategorySeeder::class,

@@ -2,29 +2,24 @@
 
 namespace Database\Seeders;
 
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 use Carbon\Carbon;
+
 class SupplierSeeder extends Seeder
 {
-    /**
-     * Run the database seeds.
-     */
     public function run(): void
     {
         $now = Carbon::now();
 
-        DB::table('suppliers')->insert([
-            
-            // 1. Eco Fashion (Outlet & Fardo)
+        $suppliers = [
             [
                 'name' => 'Eco Fashion (Outlet & Fardo)',
                 'company_name' => 'Ckeuta-Vendas',
                 'tax_id' => null,
                 'email' => null,
-                'phone' => '929 839 776',
-                'whatsapp' => '929 839 776',
+                'phone' => '929839776',
+                'whatsapp' => '929839776',
                 'address' => 'Samba - Antigo Control',
                 'city' => 'Luanda',
                 'province' => 'Luanda',
@@ -40,11 +35,7 @@ class SupplierSeeder extends Seeder
                 'commission_percentage' => null,
                 'rating' => null,
                 'notes' => null,
-                'created_at' => $now,
-                'updated_at' => $now,
             ],
-            
-            // 2. Esmeralda Basquete
             [
                 'name' => 'Esmeralda Basquete',
                 'company_name' => 'Tchiva\'s Shop',
@@ -67,19 +58,15 @@ class SupplierSeeder extends Seeder
                 'commission_percentage' => null,
                 'rating' => null,
                 'notes' => null,
-                'created_at' => $now,
-                'updated_at' => $now,
             ],
-            
-            // 3. Tendência MBM
             [
                 'name' => 'Tendência MBM',
                 'company_name' => 'Tendência MBM',
                 'tax_id' => null,
                 'email' => null,
-                'phone' => '925 792 097',
-                'whatsapp' => '925 792 097',
-                'address' => 'Morro Bento - Antes da paragem da Imetro (sentido)',
+                'phone' => '925792097',
+                'whatsapp' => '925792097',
+                'address' => 'Morro Bento - Antes da paragem da Imetro',
                 'city' => 'Luanda',
                 'province' => 'Luanda',
                 'country' => 'Angola',
@@ -94,11 +81,7 @@ class SupplierSeeder extends Seeder
                 'commission_percentage' => null,
                 'rating' => null,
                 'notes' => null,
-                'created_at' => $now,
-                'updated_at' => $now,
             ],
-            
-            // 4. Rebeca Luísa
             [
                 'name' => 'Rebeca Luísa',
                 'company_name' => 'Rebeca Luísa',
@@ -121,18 +104,14 @@ class SupplierSeeder extends Seeder
                 'commission_percentage' => null,
                 'rating' => null,
                 'notes' => null,
-                'created_at' => $now,
-                'updated_at' => $now,
             ],
-            
-            // 5. Sú Pedro
             [
                 'name' => 'Sú Pedro',
                 'company_name' => 'Sú Pedro',
                 'tax_id' => null,
                 'email' => null,
-                'phone' => '931 584 005',
-                'whatsapp' => '931 584 005',
+                'phone' => '931584005',
+                'whatsapp' => '931584005',
                 'address' => 'Viana - Luanda Sul',
                 'city' => 'Luanda',
                 'province' => 'Luanda',
@@ -148,11 +127,7 @@ class SupplierSeeder extends Seeder
                 'commission_percentage' => null,
                 'rating' => null,
                 'notes' => null,
-                'created_at' => $now,
-                'updated_at' => $now,
             ],
-            
-            // 6. Bazar da Allina
             [
                 'name' => 'Bazar da Allina',
                 'company_name' => 'Bazar da Allina',
@@ -175,18 +150,14 @@ class SupplierSeeder extends Seeder
                 'commission_percentage' => null,
                 'rating' => null,
                 'notes' => null,
-                'created_at' => $now,
-                'updated_at' => $now,
             ],
-            
-            // 7. Bazar da Ira
             [
                 'name' => 'Bazar da Ira',
                 'company_name' => 'Bazar da Ira',
                 'tax_id' => null,
                 'email' => null,
-                'phone' => '955 194 473',
-                'whatsapp' => '938 839 190',
+                'phone' => '955194473',
+                'whatsapp' => '938839190',
                 'address' => 'Patriota',
                 'city' => 'Luanda',
                 'province' => 'Luanda',
@@ -202,11 +173,7 @@ class SupplierSeeder extends Seeder
                 'commission_percentage' => null,
                 'rating' => null,
                 'notes' => null,
-                'created_at' => $now,
-                'updated_at' => $now,
             ],
-            
-            // 8. Ró Élégance
             [
                 'name' => 'Ró Élégance',
                 'company_name' => 'Ró Élégance',
@@ -229,18 +196,14 @@ class SupplierSeeder extends Seeder
                 'commission_percentage' => null,
                 'rating' => null,
                 'notes' => null,
-                'created_at' => $now,
-                'updated_at' => $now,
             ],
-            
-            // 9. AyaBelle
             [
                 'name' => 'AyaBelle',
                 'company_name' => 'AyaBelle',
                 'tax_id' => null,
                 'email' => null,
-                'phone' => '945 500 020',
-                'whatsapp' => '945 500 020',
+                'phone' => '945500020',
+                'whatsapp' => '945500020',
                 'address' => 'Gamek - Perto do nosso Centro',
                 'city' => 'Luanda',
                 'province' => 'Luanda',
@@ -256,11 +219,7 @@ class SupplierSeeder extends Seeder
                 'commission_percentage' => null,
                 'rating' => null,
                 'notes' => null,
-                'created_at' => $now,
-                'updated_at' => $now,
             ],
-            
-            // 10. Rosa Neide Fardo da Rosa
             [
                 'name' => 'Rosa Neide',
                 'company_name' => 'Fardo da Rosa',
@@ -283,18 +242,14 @@ class SupplierSeeder extends Seeder
                 'commission_percentage' => null,
                 'rating' => null,
                 'notes' => null,
-                'created_at' => $now,
-                'updated_at' => $now,
             ],
-            
-            // 11. Mille xtylus Boutique
             [
                 'name' => 'Mille xtylus Boutique',
                 'company_name' => 'Mille xtylus Boutique',
                 'tax_id' => null,
                 'email' => null,
                 'phone' => '912408340',
-                'whatsapp' => '912 408 340',
+                'whatsapp' => '912408340',
                 'address' => 'Camama',
                 'city' => 'Luanda',
                 'province' => 'Luanda',
@@ -310,11 +265,7 @@ class SupplierSeeder extends Seeder
                 'commission_percentage' => null,
                 'rating' => null,
                 'notes' => null,
-                'created_at' => $now,
-                'updated_at' => $now,
             ],
-            
-            // 12. Naita Angola
             [
                 'name' => 'Naita Angola',
                 'company_name' => 'Naita Angola',
@@ -322,7 +273,7 @@ class SupplierSeeder extends Seeder
                 'email' => null,
                 'phone' => '940276604',
                 'whatsapp' => '972351199',
-                'address' => 'Camama 1 - Rua do Banco Atlântico (cidade universitária)',
+                'address' => 'Camama 1 - Rua do Banco Atlântico',
                 'city' => 'Luanda',
                 'province' => 'Luanda',
                 'country' => 'Angola',
@@ -337,17 +288,13 @@ class SupplierSeeder extends Seeder
                 'commission_percentage' => null,
                 'rating' => null,
                 'notes' => null,
-                'created_at' => $now,
-                'updated_at' => $now,
             ],
-            
-            // 13. Marcia Saluvo
             [
                 'name' => 'Marcia Saluvo',
                 'company_name' => 'Marcia Saluvo',
                 'tax_id' => null,
                 'email' => null,
-                'phone' => null,
+                'phone' => '900000001', // Placeholder - sem telefone
                 'whatsapp' => null,
                 'address' => 'Sequele',
                 'city' => 'Luanda',
@@ -363,12 +310,8 @@ class SupplierSeeder extends Seeder
                 'is_consignment' => true,
                 'commission_percentage' => null,
                 'rating' => null,
-                'notes' => null,
-                'created_at' => $now,
-                'updated_at' => $now,
+                'notes' => 'Sem telefone registado',
             ],
-            
-            // 14. Rossana Pedro
             [
                 'name' => 'Rossana Pedro',
                 'company_name' => 'Rossana Pedro',
@@ -391,11 +334,7 @@ class SupplierSeeder extends Seeder
                 'commission_percentage' => null,
                 'rating' => null,
                 'notes' => null,
-                'created_at' => $now,
-                'updated_at' => $now,
             ],
-            
-            // 15. Encantos da Jó
             [
                 'name' => 'Encantos da Jó',
                 'company_name' => 'Encantos da Jó',
@@ -418,11 +357,7 @@ class SupplierSeeder extends Seeder
                 'commission_percentage' => null,
                 'rating' => null,
                 'notes' => null,
-                'created_at' => $now,
-                'updated_at' => $now,
             ],
-            
-            // 16. Hello Mulheres
             [
                 'name' => 'Hello Mulheres',
                 'company_name' => 'Hello Mulheres',
@@ -445,11 +380,7 @@ class SupplierSeeder extends Seeder
                 'commission_percentage' => null,
                 'rating' => null,
                 'notes' => null,
-                'created_at' => $now,
-                'updated_at' => $now,
             ],
-            
-            // 17. Teresa Rodrigues
             [
                 'name' => 'Teresa Rodrigues',
                 'company_name' => 'Teresa Rodrigues',
@@ -472,11 +403,7 @@ class SupplierSeeder extends Seeder
                 'commission_percentage' => null,
                 'rating' => null,
                 'notes' => null,
-                'created_at' => $now,
-                'updated_at' => $now,
             ],
-            
-            // 18. Império Feminino
             [
                 'name' => 'Império Feminino',
                 'company_name' => 'Império Feminino',
@@ -499,11 +426,7 @@ class SupplierSeeder extends Seeder
                 'commission_percentage' => null,
                 'rating' => null,
                 'notes' => null,
-                'created_at' => $now,
-                'updated_at' => $now,
             ],
-            
-            // 19. Sita's Closet
             [
                 'name' => 'Sita\'s Closet',
                 'company_name' => 'Sita\'s Closet',
@@ -526,11 +449,7 @@ class SupplierSeeder extends Seeder
                 'commission_percentage' => null,
                 'rating' => null,
                 'notes' => null,
-                'created_at' => $now,
-                'updated_at' => $now,
             ],
-            
-            // 20. Núria Iracelma - TEU ESTILO (ESTOQUE PRÓPRIO!)
             [
                 'name' => 'Núria Iracelma',
                 'company_name' => 'Teu Estilo',
@@ -542,23 +461,50 @@ class SupplierSeeder extends Seeder
                 'city' => 'Luanda',
                 'province' => 'Luanda',
                 'country' => 'Angola',
-                'payment_terms' => 'cash',  // ⬅️ Próprio = pagamento à vista
+                'payment_terms' => 'cash',
                 'payment_terms_notes' => 'Estoque próprio da Teu Estilo',
                 'credit_limit' => null,
                 'bank_name' => null,
                 'bank_account' => null,
                 'iban' => null,
                 'is_active' => true,
-                'is_consignment' => false,  // ⬅️ FALSE = ESTOQUE PRÓPRIO!
-                'commission_percentage' => null,  // ⬅️ Não tem comissão (é teu!)
-                'rating' => 5,  // ⬅️ 5 estrelas (é a tua loja!)
+                'is_consignment' => false, // ESTOQUE PRÓPRIO
+                'commission_percentage' => null,
+                'rating' => 5,
                 'notes' => 'Fornecedor interno - estoque próprio da Teu Estilo',
-                'created_at' => $now,
-                'updated_at' => $now,
             ],
-            
-        ]);
+        ];
 
-        $this->command->info('✅ Suppliers seeded: 20 suppliers (19 consignment + 1 own stock - Teu Estilo)');
+        foreach ($suppliers as $supplier) {
+            DB::table('suppliers')->updateOrInsert(
+                ['phone' => $supplier['phone']], // Chave única (telefone)
+                [
+                    'name' => $supplier['name'],
+                    'company_name' => $supplier['company_name'],
+                    'tax_id' => $supplier['tax_id'],
+                    'email' => $supplier['email'],
+                    'whatsapp' => $supplier['whatsapp'],
+                    'address' => $supplier['address'],
+                    'city' => $supplier['city'],
+                    'province' => $supplier['province'],
+                    'country' => $supplier['country'],
+                    'payment_terms' => $supplier['payment_terms'],
+                    'payment_terms_notes' => $supplier['payment_terms_notes'],
+                    'credit_limit' => $supplier['credit_limit'],
+                    'bank_name' => $supplier['bank_name'],
+                    'bank_account' => $supplier['bank_account'],
+                    'iban' => $supplier['iban'],
+                    'is_active' => $supplier['is_active'],
+                    'is_consignment' => $supplier['is_consignment'],
+                    'commission_percentage' => $supplier['commission_percentage'],
+                    'rating' => $supplier['rating'],
+                    'notes' => $supplier['notes'],
+                    'created_at' => $now,
+                    'updated_at' => $now,
+                ]
+            );
+        }
+
+        $this->command->info('✅ Suppliers seeded: 20 suppliers (19 consignment + 1 own stock)');
     }
 }
