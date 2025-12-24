@@ -14,8 +14,9 @@ class SupplierSeeder extends Seeder
 
         $suppliers = [
             [
-                'name' => 'Eco Fashion (Outlet & Fardo)',
+                 'name' => 'Eco Fashion (Outlet & Fardo)',
                 'company_name' => 'Ckeuta-Vendas',
+                'sku_code' => 'CKEU',
                 'tax_id' => null,
                 'email' => null,
                 'phone' => '929839776',
@@ -39,6 +40,7 @@ class SupplierSeeder extends Seeder
             [
                 'name' => 'Esmeralda Basquete',
                 'company_name' => 'Tchiva\'s Shop',
+                'sku_code' => 'TCHI',
                 'tax_id' => null,
                 'email' => null,
                 'phone' => '931251840',
@@ -62,6 +64,7 @@ class SupplierSeeder extends Seeder
             [
                 'name' => 'Tendência MBM',
                 'company_name' => 'Tendência MBM',
+                'sku_code' => 'TEND',
                 'tax_id' => null,
                 'email' => null,
                 'phone' => '925792097',
@@ -85,6 +88,7 @@ class SupplierSeeder extends Seeder
             [
                 'name' => 'Rebeca Luísa',
                 'company_name' => 'Rebeca Luísa',
+                'sku_code' => 'REBE',
                 'tax_id' => null,
                 'email' => null,
                 'phone' => '931896810',
@@ -108,6 +112,7 @@ class SupplierSeeder extends Seeder
             [
                 'name' => 'Sú Pedro',
                 'company_name' => 'Sú Pedro',
+                'sku_code' => 'SUPE',
                 'tax_id' => null,
                 'email' => null,
                 'phone' => '931584005',
@@ -131,6 +136,7 @@ class SupplierSeeder extends Seeder
             [
                 'name' => 'Bazar da Allina',
                 'company_name' => 'Bazar da Allina',
+                'sku_code' => 'ALLI',
                 'tax_id' => null,
                 'email' => null,
                 'phone' => '949780391',
@@ -154,6 +160,7 @@ class SupplierSeeder extends Seeder
             [
                 'name' => 'Bazar da Ira',
                 'company_name' => 'Bazar da Ira',
+                'sku_code' => 'BIRA',
                 'tax_id' => null,
                 'email' => null,
                 'phone' => '955194473',
@@ -177,6 +184,7 @@ class SupplierSeeder extends Seeder
             [
                 'name' => 'Ró Élégance',
                 'company_name' => 'Ró Élégance',
+                'sku_code' => 'ROEL',
                 'tax_id' => null,
                 'email' => 'roloja540@gmail.com',
                 'phone' => '951770524',
@@ -200,6 +208,7 @@ class SupplierSeeder extends Seeder
             [
                 'name' => 'AyaBelle',
                 'company_name' => 'AyaBelle',
+                'sku_code' => 'AYAB',
                 'tax_id' => null,
                 'email' => null,
                 'phone' => '945500020',
@@ -223,6 +232,7 @@ class SupplierSeeder extends Seeder
             [
                 'name' => 'Rosa Neide',
                 'company_name' => 'Fardo da Rosa',
+                'sku_code' => 'ROSA',
                 'tax_id' => null,
                 'email' => 'rosaneide714@gmail.com',
                 'phone' => '922577989',
@@ -246,6 +256,7 @@ class SupplierSeeder extends Seeder
             [
                 'name' => 'Mille xtylus Boutique',
                 'company_name' => 'Mille xtylus Boutique',
+                'sku_code' => 'MILL',
                 'tax_id' => null,
                 'email' => null,
                 'phone' => '912408340',
@@ -269,6 +280,7 @@ class SupplierSeeder extends Seeder
             [
                 'name' => 'Naita Angola',
                 'company_name' => 'Naita Angola',
+                'sku_code' => 'NAIT',
                 'tax_id' => null,
                 'email' => null,
                 'phone' => '940276604',
@@ -292,6 +304,7 @@ class SupplierSeeder extends Seeder
             [
                 'name' => 'Marcia Saluvo',
                 'company_name' => 'Marcia Saluvo',
+                'sku_code' => 'MARC',
                 'tax_id' => null,
                 'email' => null,
                 'phone' => '900000001', // Placeholder - sem telefone
@@ -315,6 +328,7 @@ class SupplierSeeder extends Seeder
             [
                 'name' => 'Rossana Pedro',
                 'company_name' => 'Rossana Pedro',
+                'sku_code' => 'ROSS',
                 'tax_id' => null,
                 'email' => null,
                 'phone' => '943148829',
@@ -338,6 +352,7 @@ class SupplierSeeder extends Seeder
             [
                 'name' => 'Encantos da Jó',
                 'company_name' => 'Encantos da Jó',
+                'sku_code' => 'ENJO',
                 'tax_id' => null,
                 'email' => 'jornezajoao@gmail.com',
                 'phone' => '944503494',
@@ -361,6 +376,7 @@ class SupplierSeeder extends Seeder
             [
                 'name' => 'Hello Mulheres',
                 'company_name' => 'Hello Mulheres',
+                'sku_code' => 'HELL',
                 'tax_id' => null,
                 'email' => null,
                 'phone' => '972594060',
@@ -384,6 +400,7 @@ class SupplierSeeder extends Seeder
             [
                 'name' => 'Teresa Rodrigues',
                 'company_name' => 'Teresa Rodrigues',
+                'sku_code' => 'TERE',
                 'tax_id' => null,
                 'email' => null,
                 'phone' => '932033852',
@@ -407,6 +424,7 @@ class SupplierSeeder extends Seeder
             [
                 'name' => 'Império Feminino',
                 'company_name' => 'Império Feminino',
+                'sku_code' => 'IMPE',
                 'tax_id' => null,
                 'email' => null,
                 'phone' => '945276266',
@@ -430,6 +448,7 @@ class SupplierSeeder extends Seeder
             [
                 'name' => 'Sita\'s Closet',
                 'company_name' => 'Sita\'s Closet',
+                'sku_code' => 'SITA',
                 'tax_id' => null,
                 'email' => null,
                 'phone' => '949406884',
@@ -453,6 +472,7 @@ class SupplierSeeder extends Seeder
             [
                 'name' => 'Núria Iracelma',
                 'company_name' => 'Teu Estilo',
+                'sku_code' => 'TEST',
                 'tax_id' => null,
                 'email' => null,
                 'phone' => '928496036',
@@ -481,6 +501,7 @@ class SupplierSeeder extends Seeder
                 [
                     'name' => $supplier['name'],
                     'company_name' => $supplier['company_name'],
+                    'sku_code' => $supplier['sku_code'],
                     'tax_id' => $supplier['tax_id'],
                     'email' => $supplier['email'],
                     'whatsapp' => $supplier['whatsapp'],
@@ -505,6 +526,6 @@ class SupplierSeeder extends Seeder
             );
         }
 
-        $this->command->info('✅ Suppliers seeded: 20 suppliers (19 consignment + 1 own stock)');
+        $this->command->info('✅ Suppliers seeded: 20 suppliers with SKU codes (19 consignment + 1 own stock)');
     }
 }

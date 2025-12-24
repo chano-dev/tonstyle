@@ -24,6 +24,7 @@ class DatabaseSeeder extends Seeder
 
             // Seeders de Tabelas Essênias (subcategoria; cores; tamanhos; material; tipo de corpo);
             SubcategorySeeder::class,
+            SubcategoryServicesSeeder::class, // Seeder para as subcategorias de serviço
             ColorSeeder::class,
             SizeSeeder::class,
             MaterialSeeder::class,
