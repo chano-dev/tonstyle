@@ -8,14 +8,17 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\HasOne;
+use Filament\Models\Contracts\FilamentUser;
+use Filament\Panel;
 
-class User extends Authenticatable
+class User extends Authenticatable implements FilamentUser
 {
     use HasFactory, Notifiable, SoftDeletes;
 
     protected $fillable = [
         'name',
         'email',
+        'user_type',
         'phone',
         'password',
         'email_verified_at',
@@ -116,5 +119,57 @@ class User extends Authenticatable
             'status' => 'active',
             'expires_at' => now()->addDays(7),
         ]);
+    }
+
+/**
+     * Filament: Verifica se pode aceder ao painel
+     */
+    public function canAccessPanel(Panel $panel): bool
+    {
+        return $this->canAccessAdmin() && $this->is_active;
+    }
+
+    // ==========================================
+    // VERIFICAÇÃO DE PERMISSÕES
+    // ==========================================
+
+    /**
+     * Verifica se é admin
+     */
+    public function isAdmin(): bool
+    {
+        return $this->user_type === 'admin';
+    }
+
+    /**
+     * Verifica se é staff
+     */
+    public function isStaff(): bool
+    {
+        return $this->user_type === 'staff';
+    }
+
+    /**
+     * Verifica se é partner
+     */
+    public function isPartner(): bool
+    {
+        return $this->user_type === 'partners';
+    }
+
+    /**
+     * Verifica se é customer
+     */
+    public function isCustomer(): bool
+    {
+        return $this->user_type === 'customer';
+    }
+
+    /**
+     * Verifica se tem acesso ao admin panel
+     */
+    public function canAccessAdmin(): bool
+    {
+        return in_array($this->user_type, ['admin', 'staff']);
     }
 }

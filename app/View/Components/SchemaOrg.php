@@ -2,21 +2,20 @@
 
 namespace App\View\Components;
 
+use Closure;
+use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 
 class SchemaOrg extends Component
 {
-    public $data;
+    public ?array $data;
 
-    public function __construct($data = [])
+    public function __construct(?array $data = null)
     {
-        // Garante que @context e @type sempre existem
-        $this->data = array_merge([
-            '@context' => 'https://schema.org',
-        ], $data);
+        $this->data = $data;
     }
 
-    public function render()
+    public function render(): View|Closure|string
     {
         return view('components.schema-org');
     }
