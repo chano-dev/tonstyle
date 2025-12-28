@@ -37,6 +37,7 @@ class ImagesRelationManager extends RelationManager
                     ->label('Imagem')
                     ->image()
                     ->directory('services')
+                    ->disk('public')
                     ->visibility('public')
                     ->required()
                     ->columnSpanFull(),

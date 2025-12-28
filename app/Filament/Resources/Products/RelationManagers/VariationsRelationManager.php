@@ -78,6 +78,7 @@ class VariationsRelationManager extends RelationManager
                     ->label('Imagem da Variação')
                     ->image()
                     ->directory('products/variations')
+                    ->disk('public')
                     ->visibility('public')
                     ->helperText('Opcional: imagem específica para esta cor'),
                 Toggle::make('is_active')
